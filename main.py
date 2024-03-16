@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from routers.students import student_router
-from routers.levels import level_router
-from middleware import add_process_time_header
+from .routers.students import student_router
+from .routers.levels import level_router
+from .middleware import add_process_time_header
 
 app = FastAPI()
 

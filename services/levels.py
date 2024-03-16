@@ -1,4 +1,4 @@
-from schemas.levels import Level
+from ..schemas.levels import Level
 
 
 class LevelService:

@@ -21,7 +21,7 @@ def test_get_all_students():
 def test_edit_student():
     response = client.put('/students/John', json={'first_name': 'John', 'last_name': 'Doe', 'age': 20})
     assert response.status_code == 200
-    assert response.json() == {'first_name': 'John', 'last_name': 'Doe', 'age': 20}
+    assert response.json() == {'message': 'Success', 'data': {'first_name': 'John', 'last_name': 'Doe', 'age': 20}}
 
 def test_edit_student_not_found():
     response = client.put('/students/Janet', json={'first_name': 'John', 'last_name': 'Doe', 'age': 20})

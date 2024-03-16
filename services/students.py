@@ -1,4 +1,4 @@
-from schemas.students import Student
+from ..schemas.students import Student
 
 class StudentService:
 

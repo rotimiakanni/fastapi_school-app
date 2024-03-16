@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, status
-from schemas.students import Student
-from services.levels import level_service
-from schemas.levels import Level
+from ..schemas.students import Student
+from ..services.levels import level_service
+from ..schemas.levels import Level
 
 level_router = APIRouter()
 

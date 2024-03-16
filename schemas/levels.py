@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from schemas.students import Student
+from ..schemas.students import Student
 
 class Level(BaseModel):
     name: str
